@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+## **ThriftEase - Aplikasi E-commerce untuk Thrift**  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Selamat datang di repositori **ThriftEase**! Ini adalah proyek aplikasi e-commerce berbasis web yang dikembangkan menggunakan stack modern seperti **React, Remix, TypeScript**, dan **MySQL**. ThriftEase memungkinkan pengguna untuk membeli dan menjual produk thrift dengan mudah dan nyaman.  
 
-## Available Scripts
+### **Fitur Utama**  
+- **Autentikasi Pengguna:** Login dan registrasi pengguna.  
+- **Manajemen Produk:** Tambah, edit, dan hapus produk.  
+- **Keranjang Belanja:** Pengguna dapat menambahkan barang ke keranjang dan melanjutkan ke pembayaran.  
+- **Kupon Diskon:** Mendukung kode kupon untuk promosi.  
+- **Dashboard Admin:** Mengelola pengguna dan pesanan dari backend.  
+- **Sistem Pembayaran:** Integrasi dengan gateway pembayaran.  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Tech Stack**  
+- **Frontend:**  
+  - React + Remix  
+  - Vite  
+  - Tailwind CSS + PostCSS  
+  - TypeScript  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Backend:**  
+  - Node.js + Remix  
+  - MySQL dengan Prisma ORM  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Tools dan Konfigurasi:**  
+  - **pnpm** untuk manajemen paket  
+  - **ESLint** dan **Prettier** untuk menjaga konsistensi kode  
+  - **Prisma** untuk migrasi dan akses basis data  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Instalasi dan Konfigurasi**  
 
-### `npm run build`
+### **Prasyarat**  
+- Node.js (versi terbaru)  
+- MySQL server  
+- pnpm (manajer paket)  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Cara Menjalankan Proyek**  
+1. **Clone repositori ini**  
+   ```bash
+   git clone https://github.com/nama-user/thriftease.git
+   cd thriftease
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Instal dependensi**  
+   ```bash
+   pnpm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Konfigurasi Basis Data**  
+   - Buat database MySQL dan sesuaikan pengaturan di file `.env`.  
+   - Contoh konfigurasi `.env`:  
+     ```dotenv
+     DATABASE_URL="mysql://user:password@localhost:3306/nama_database"
+     ```
 
-### `npm run eject`
+4. **Migrate database dengan Prisma**  
+   ```bash
+   pnpm prisma migrate dev --name init
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Jalankan aplikasi dalam mode pengembangan**  
+   ```bash
+   pnpm dev
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. **Akses Aplikasi**  
+   Aplikasi akan berjalan di `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **Struktur Proyek**  
+```plaintext
+thriftease/
+│
+├── prisma/            # Skema Prisma untuk database MySQL
+├── public/            # File statis (gambar, dll.)
+├── src/               
+│   ├── components/    # Komponen UI
+│   ├── routes/        # Rute Remix
+│   ├── styles/        # Konfigurasi Tailwind dan PostCSS
+│   ├── utils/         # Fungsi utilitas
+│   └── index.tsx      # Entry point aplikasi
+├── .eslintrc.cjs      # Konfigurasi ESLint
+├── .prettierrc        # Konfigurasi Prettier
+├── postcss.config.js  # Konfigurasi PostCSS
+├── tailwind.config.js # Konfigurasi Tailwind CSS
+└── vite.config.ts     # Konfigurasi Vite
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Script Penting**  
+- **Menjalankan Aplikasi:**  
+  ```bash
+  pnpm dev
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Membangun untuk Produksi:**  
+  ```bash
+  pnpm build
+  ```
 
-### Code Splitting
+- **Menjalankan Prisma Studio (GUI database):**  
+  ```bash
+  pnpm prisma studio
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Linting Kode:**  
+  ```bash
+  pnpm lint
+  ```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## **Kontribusi**  
+Kami terbuka untuk kontribusi! Silakan fork repositori ini dan ajukan pull request dengan perubahan atau perbaikan yang Anda buat. Pastikan kode Anda konsisten dengan standar yang ditetapkan oleh ESLint dan Prettier.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## **Lisensi**  
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## **Kontak**  
+Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami melalui [email@example.com](mailto:email@example.com).  
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Selamat berbelanja dan berjualan di ThriftEase! 🚀
