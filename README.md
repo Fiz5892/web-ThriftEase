@@ -126,7 +126,7 @@ Kami terbuka untuk kontribusi! Silakan fork repositori ini dan ajukan pull reque
 ---
 
 ## **Lisensi**  
-ThriftEase, dikembangkan sebagai bagian dari proyek akademik di [Universitas Negeri Malang]. Proyek ini dilindungi oleh Hak Kekayaan Intelektual (HKI) yang dikelola oleh universitas dan tunduk pada ketentuan serta peraturan yang berlaku.(LICENSE)
+ThriftEase, dikembangkan sebagai bagian dari proyek akademik di [Universitas Negeri Malang]. Proyek ini dilindungi oleh [Hak Kekayaan Intelektual (HKI)](Lisensi) yang dikelola oleh universitas dan tunduk pada ketentuan serta peraturan yang berlaku.
 
 ---
 
