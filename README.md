@@ -44,12 +44,17 @@ Selamat datang di repositori **ThriftEase**! Ini adalah proyek aplikasi e-commer
    cd thriftease
    ```
 
-2. **Instal dependensi**  
+2. **Instal PNPM (opsional)**
+   ```bash
+   npm install -g pnpm
+   ```
+
+3. **Instal dependensi**  
    ```bash
    pnpm install
    ```
 
-3. **Konfigurasi Basis Data**  
+4. **Konfigurasi Basis Data**  
    - Buat database MySQL dan sesuaikan pengaturan di file `.env`.  
    - Contoh konfigurasi `.env`:  
      ```dotenv
@@ -121,13 +126,11 @@ Kami terbuka untuk kontribusi! Silakan fork repositori ini dan ajukan pull reque
 ---
 
 ## **Lisensi**  
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).  
+ThriftEase, dikembangkan sebagai bagian dari proyek akademik di [Universitas Negeri Malang]. Proyek ini dilindungi oleh Hak Kekayaan Intelektual (HKI) yang dikelola oleh universitas dan tunduk pada ketentuan serta peraturan yang berlaku.(LICENSE)
 
 ---
 
 ## **Kontak**  
-Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami melalui [email@example.com](mailto:email@example.com).  
+Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami melalui [4315thriftease@gmail.com](mailto:4315thriftease@gmail.com).  
 
 ---
-
-Selamat berbelanja dan berjualan di ThriftEase! 🚀
